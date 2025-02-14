@@ -1,6 +1,6 @@
 local PLUGIN = PLUGIN;
 
-ix.command.Add("CharPermitMedals", {
+ix.command.Add("CharGiveMedals", {
 	description = "Permit certain medal to character",
 	OnCheckAccess = function(self, client)
 		return client:GetCharacter():HasFlags("Z");
@@ -28,7 +28,7 @@ ix.command.Add("CharPermitMedals", {
 	end,
 })
 
-ix.command.Add("CharUnPermitMedals", {
+ix.command.Add("CharUnGiveMedals", {
 	description = "Revoke certain medals from character",
 	OnCheckAccess = function(self, client)
 		return client:GetCharacter():HasFlags("Z");
