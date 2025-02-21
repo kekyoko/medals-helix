@@ -3,7 +3,7 @@ local PLUGIN = PLUGIN;
 ix.command.Add("CharGiveMedals", {
 	description = "Permit certain medal to character",
 	OnCheckAccess = function(self, client)
-		return client:GetCharacter():HasFlags("Z");
+		return client:GetCharacter():HasFlags("M");
 	end,
 	arguments = {
 		ix.type.character,
