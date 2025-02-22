@@ -29,7 +29,7 @@ ix.command.Add("CharGiveMedals", {
 })
 
 ix.command.Add("CharUnGiveMedals", {
-	description = "Revoke certain medals from character",
+	description = "Revoke medals from character",
 	OnCheckAccess = function(self, client)
 		return client:GetCharacter():HasFlags("Z");
 	end,
